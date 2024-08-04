@@ -14,7 +14,7 @@ interface CalculatorInterface
      *----------------------------------------*/
 
     /**
-     * calculate the sum of augend and addend
+     * calculate sum of augend and addend
      * 
      * @param int|float $augend
      * @param int|float $addend
@@ -24,7 +24,7 @@ interface CalculatorInterface
     public function addition(int|float $augend, int|float $addend, bool $isRound = false): int|float;
 
     /**
-     * calculate the difference between minuend and subtrahend
+     * calculate difference between minuend and subtrahend
      * 
      * @param int|float $minuend
      * @param int|float $subtrahend
@@ -34,7 +34,7 @@ interface CalculatorInterface
     public function subtraction(int|float $minuend, int|float $subtrahend, bool $isRound = false): int|float;
 
     /**
-     * calculate the product of multiplicand and multiplier
+     * calculate product of multiplicand and multiplier
      * 
      * @param int|float $multiplicand
      * @param int|float $multiplier
@@ -44,7 +44,7 @@ interface CalculatorInterface
     public function multiplication(int|float $multiplicand, int|float $multiplier, bool $isRound = false): int|float;
 
     /**
-     * calculate the quotient of dividend and divisor
+     * calculate quotient of dividend and divisor
      * 
      * @param int|float $dividend
      * @param int|float $divisor
@@ -54,7 +54,7 @@ interface CalculatorInterface
     public function division(int|float $dividend, int|float $divisor, bool $isRound = false): int|float;
 
     /**
-     * calculate the remainder of dividend and divisor
+     * calculate remainder of dividend and divisor
      * 
      * @param int $dividend
      * @param int $divisor
@@ -63,7 +63,7 @@ interface CalculatorInterface
     public function remainder(int|float $dividend, int|float $divisor): int;
 
     /**
-     * calculate the power of number and exponent
+     * calculate power of number and exponent
      * 
      * @param int|float $number
      * @param int $exponent
@@ -72,7 +72,7 @@ interface CalculatorInterface
     public function power(int|float $number, int $exponent): int|float;
 
     /**
-     * calculate the square of number
+     * calculate square of number
      * 
      * @param int|float $number
      * @return int|float
@@ -80,7 +80,7 @@ interface CalculatorInterface
     public function squared(int|float $number): int|float;
 
     /**
-     * calculate the cube of number
+     * calculate cube of number
      * 
      * @param int|float $number
      * @return int|float
@@ -120,7 +120,7 @@ interface CalculatorInterface
      *----------------------------------------*/
 
     /**
-     * calculate the factorial of number
+     * calculate factorial of number
      * 
      * @param int $number
      * @param bool $returnString
@@ -133,7 +133,7 @@ interface CalculatorInterface
      *----------------------------------------*/
 
     /**
-     * count the number of prime factors of number
+     * count number of prime factors of number
      * 
      * @param int $number
      * @param int $primeNumber
@@ -142,7 +142,7 @@ interface CalculatorInterface
     public function primeCount(int $number, int $primeNumber): int;
 
     /**
-     * calculate the prime factorization of number
+     * calculate prime factorization of number
      * 
      * @param int $number
      * @return array<int, int>
@@ -154,7 +154,7 @@ interface CalculatorInterface
      *----------------------------------------*/
 
     /**
-     * calculate the fibonacci of number
+     * calculate fibonacci of number
      * 
      * @param int $number
      * @return int

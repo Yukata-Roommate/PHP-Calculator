@@ -65,7 +65,7 @@ class Manager
      *----------------------------------------*/
 
     /**
-     * calculate the sum of augend and addend
+     * calculate sum of augend and addend
      * 
      * @param int|float $augend
      * @param int|float $addend
@@ -78,7 +78,7 @@ class Manager
     }
 
     /**
-     * calculate the difference between minuend and subtrahend
+     * calculate difference between minuend and subtrahend
      * 
      * @param int|float $minuend
      * @param int|float $subtrahend
@@ -91,7 +91,7 @@ class Manager
     }
 
     /**
-     * calculate the product of multiplicand and multiplier
+     * calculate product of multiplicand and multiplier
      * 
      * @param int|float $multiplicand
      * @param int|float $multiplier
@@ -104,7 +104,7 @@ class Manager
     }
 
     /**
-     * calculate the quotient of dividend and divisor
+     * calculate quotient of dividend and divisor
      * 
      * @param int|float $dividend
      * @param int|float $divisor

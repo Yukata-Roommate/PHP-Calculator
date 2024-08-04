@@ -16,7 +16,7 @@ class Calculator implements CalculatorInterface
      *----------------------------------------*/
 
     /**
-     * calculate the sum of augend and addend
+     * calculate sum of augend and addend
      *
      * @param int|float $augend
      * @param int|float $addend
@@ -31,7 +31,7 @@ class Calculator implements CalculatorInterface
     }
 
     /**
-     * calculate the difference between minuend and subtrahend
+     * calculate difference between minuend and subtrahend
      *
      * @param int|float $minuend
      * @param int|float $subtrahend
@@ -46,7 +46,7 @@ class Calculator implements CalculatorInterface
     }
 
     /**
-     * calculate the product of multiplicand and multiplier
+     * calculate product of multiplicand and multiplier
      *
      * @param int|float $multiplicand
      * @param int|float $multiplier
@@ -61,7 +61,7 @@ class Calculator implements CalculatorInterface
     }
 
     /**
-     * calculate the quotient of dividend and divisor
+     * calculate quotient of dividend and divisor
      *
      * @param int|float $dividend
      * @param int|float $divisor
@@ -76,7 +76,7 @@ class Calculator implements CalculatorInterface
     }
 
     /**
-     * calculate the remainder of dividend and divisor
+     * calculate remainder of dividend and divisor
      *
      * @param int|float $dividend
      * @param int|float $divisor
@@ -88,7 +88,7 @@ class Calculator implements CalculatorInterface
     }
 
     /**
-     * calculate the power of number and exponent
+     * calculate power of number and exponent
      *
      * @param int|float $number
      * @param int $exponent
@@ -100,7 +100,7 @@ class Calculator implements CalculatorInterface
     }
 
     /**
-     * calculate the square of number
+     * calculate square of number
      *
      * @param int|float $number
      * @return int|float
@@ -111,7 +111,7 @@ class Calculator implements CalculatorInterface
     }
 
     /**
-     * calculate the cube of number
+     * calculate cube of number
      *
      * @param int|float $number
      * @return int|float
@@ -179,7 +179,7 @@ class Calculator implements CalculatorInterface
      *----------------------------------------*/
 
     /**
-     * calculate the factorial of number
+     * calculate factorial of number
      * 
      * @param int $number
      * @param bool $returnString
@@ -187,7 +187,7 @@ class Calculator implements CalculatorInterface
      */
     public function factorial(int $number, bool $returnString = false): string|int
     {
-        if ($number < 0) throw new \RuntimeException("The factorial of a negative number is not defined.");
+        if ($number < 0) throw new \RuntimeException("factorial of a negative number is not defined.");
 
         if ($number === 0) return $returnString ? "1" : 1;
 
@@ -205,7 +205,7 @@ class Calculator implements CalculatorInterface
      *----------------------------------------*/
 
     /**
-     * count the number of prime factors of number
+     * count number of prime factors of number
      *
      * @param int $number
      * @param int $primeNumber
@@ -230,7 +230,7 @@ class Calculator implements CalculatorInterface
     }
 
     /**
-     * calculate the prime factorization of number
+     * calculate prime factorization of number
      * 
      * @param int $number
      * @return array<int, int>
@@ -277,14 +277,14 @@ class Calculator implements CalculatorInterface
      *----------------------------------------*/
 
     /**
-     * calculate the fibonacci of number
+     * calculate fibonacci of number
      * 
      * @param int $number
      * @return int
      */
     public function fibonacci(int $number): int
     {
-        if ($number <= 0) throw new \RuntimeException("The fibonacci of a negative number is not defined.");
+        if ($number <= 0) throw new \RuntimeException("fibonacci of a negative number is not defined.");
 
         $x = 1 / sqrt(5);
         $a = ((1 + sqrt(5)) / 2) ** $number;
