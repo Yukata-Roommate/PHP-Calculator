@@ -3,20 +3,16 @@
     "description": "Calculator for PHP",
     "type": "library",
     "license": "MIT",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "autoload": {
         "psr-4": {
-            "YukataRm\\Calculator\\": "src",
-            "YukataRm\\Laravel\\Calculator\\": "src\\Laravel"
+            "YukataRm\\Calculator\\": "src"
         }
     },
     "extra": {
         "laravel": {
-            "providers": [
-                "YukataRm\\Laravel\\Calculator\\Provider\\FacadeServiceProvider"
-            ],
             "aliases": {
-                "Calculator": "YukataRm\\Laravel\\Calculator\\Facade\\Calculator"
+                "Calculator": "YukataRm\\Calculator\\Proxy\\Calculator"
             }
         }
     },
@@ -29,9 +25,6 @@
     "require": {
         "php": ">=8.2.0",
         "yukata-roommate/static-proxy": "^1.0.0"
-    },
-    "require-dev": {
-        "laravel/laravel": "^11.0"
     },
     "minimum-stability": "dev"
 }
