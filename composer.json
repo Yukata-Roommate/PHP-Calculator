@@ -3,17 +3,10 @@
     "description": "Calculator for PHP",
     "type": "library",
     "license": "MIT",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "autoload": {
         "psr-4": {
             "YukataRm\\Calculator\\": "src"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "aliases": {
-                "Calculator": "YukataRm\\Calculator\\Proxy\\Calculator"
-            }
         }
     },
     "authors": [
